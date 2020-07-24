@@ -23,6 +23,7 @@ namespace eShopSolution.Application.Catalog.Products
         
 
         Task<int> Delete(int productId);
+        Task<ProductViewModel> GetById(int productId, string languageId);
         Task<bool> UpdatePrice(int productId, decimal newPrice);
         Task AddViewcount(int productId);
         Task<bool> UpdateStock(int productId, int addedQuantity);
