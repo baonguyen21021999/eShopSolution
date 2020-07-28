@@ -62,7 +62,7 @@ namespace eShopSolution.Application.Catalog.Products
         {
             var product = await _context.Products.FindAsync(productId);
             product.ViewCount += 1;
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync(); 
         }
 
         public async Task<int> Create(ProductCreateRequest request)
