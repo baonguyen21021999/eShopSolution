@@ -14,6 +14,6 @@ namespace eShopSolution.ViewModels.System.Users
         public String UserName { get; set; }
 
         public String Password { get; set; }
-        public String CofirmPassword { get; set; }
+        public String ConfirmPassword { get; set; }
     }
 }

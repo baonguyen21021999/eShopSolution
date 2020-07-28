@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace eShopSolution.BackEndApi.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
+    [ApiController] 
     public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;
