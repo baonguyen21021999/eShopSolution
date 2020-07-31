@@ -39,6 +39,12 @@ namespace eShopSolution.AdminApp.Controllers
             var data = await _userApiClient.GetUsersPagings(request);
             return View(data.ResultObj);
         }
+        [HttpGet]
+        public async Task<IActionResult> Detail(Guid id)
+        {
+            var result = await _userApiClient.GetById(id);
+            return View(result.ResultObj);
+        }
 
         [HttpGet]
         public IActionResult Create()
